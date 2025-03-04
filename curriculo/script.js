@@ -1,0 +1,1 @@
+alert('Olá! Para fazer a impressão selecione a Escala 58');

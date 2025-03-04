@@ -1,0 +1,145 @@
+
+/*Estilo Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+    font-family: "Roboto", serif;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    /*botão*/
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(38,211,238,1);
+    background: -moz-linear-gradient(-45deg, rgba(38,211,238,1) 0%, rgba(1,96,110,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(38,211,238,1)), color-stop(100%, rgba(1,96,110,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(38,211,238,1) 0%, rgba(1,96,110,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(38,211,238,1) 0%, rgba(1,96,110,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(38,211,238,1) 0%, rgba(1,96,110,1) 100%);
+    background: linear-gradient(135deg, rgba(38,211,238,1) 0%, rgba(1,96,110,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26d3ee', endColorstr='#01606e', GradientType=1 );
+    clip-path: polygon(90% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+
+}
+
+
+/* Estilo do Cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #25c9e9;
+    transform: scale(1.10);
+}
+
+
+header nav ul{
+    list-style-type: nome;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site .txt-topo-site h1{
+    color: #fff;
+    font-size: 42px;
+    transition: .2s;
+    line-height: 40px;
+    margin: 100px 0 10px;
+}
+.topo-do-site h1:hover{
+    color: #25c9e9;
+    transform: scale(1.01);
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: #25c9e9;
+}
+.topo-do-site .txt-topo-site p{
+    color: #25c9e9;
+    margin: 40px 0;
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO MEIO DO SITE*/
+section.meio-do-site{
+    padding: 10px 10%;
+
+}
+section.meio-do-site{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.meio-do-site .txt-meio-do-site h1{
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    transition: .2s;
+    line-height: 80px;
+    margin: 100px 40px 200px;
+}
+.meio-do-site h1:hover{
+    color: #25c9e9;
+    transform: scale(1.01);
+}
+.meio-do-site .txt-meio-do-site h1 span{
+    color: #25c9e9;
+}
+
+.meio-do-site .img-meio-do-site img{
+    display: block;
+    margin: 0 auto;
+    object-fit;
+    object-position;
+}

@@ -1,0 +1,83 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #0f788d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+
+
+#Calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #bfe7f7;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#Calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #070707;
+}
+
+
+#operations{
+    text-align: right;
+}
+#current-operation,
+#previous-operation{
+    overflow-wrap: break-word;
+    padding: .2em;
+    min-height: 1.6em;
+}
+#previous-operation{
+    color: #777;
+}
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+}
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+#buttons-container button{
+    border:1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #0754b8;
+    cursor: pointer;
+
+}
+#buttons-container .number{
+    background-color: #0680d1;
+}
+#buttons-container button:hover{
+    background-color: #0f788d;
+    border-color: #070707;
+}
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+#buttons-container #equal-btn:hover{
+    background-color: #3a91d8;
+}
+
+.logo {
+    position: absolute;  /* Coloca a logo em uma posição absoluta */
+    top: 20px;           /* Ajuste a distância do topo */
+    left: 20px;          /* Ajuste a distância da esquerda */
+}
