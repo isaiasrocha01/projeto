@@ -5,13 +5,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -22,7 +23,7 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
 header h1 {
@@ -40,13 +41,14 @@ header .contato {
 }
 
 section {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 h2 {
     color: #1e2a47;
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 ul {
@@ -55,11 +57,6 @@ ul {
 }
 
 li {
-    margin-bottom: 5px;
-}
-
-li h3 {
-    font-size: 1.5em;
     margin-bottom: 5px;
 }
 
@@ -74,41 +71,49 @@ footer p {
     font-size: 1em;
 }
 
-/* Estilo para a logo no canto superior esquerdo */
+/* Esconde os containers inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Exibe ao ser clicado */
+section h2:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+/* Layout principal - Flexbox */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adiciona espaço entre as colunas */
+    margin-top: 40px;
+}
+
+/* Coluna esquerda (70% da largura) */
+.main-content {
+    width: 70%;
+}
+
+/* Coluna direita (30% da largura) */
+.sidebar {
+    width: 58%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste do layout de logo */
 .logo {
-    position: absolute;  /* Coloca a logo em uma posição absoluta */
-    top: 20px;           /* Ajuste a distância do topo */
-    left: 20px;          /* Ajuste a distância da esquerda */
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-.manu-desktop {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px; 
-}
-
-.manu-desktop ul {
-    display: flex;
-    padding: 0;
-    list-style: none;
-}
-
-.manu-desktop ul li {
-    margin-right: 20px;
-}
-
-.manu-desktop ul li:last-child {
-    margin-right: 0;
-}
-
-.manu-desktop a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    display: block;
-}
-
-.manu-desktop a:hover {
-    background-color: #333;
+/* Aplique um estilo na sidebar para que se destaque */
+.sidebar h2 {
+    font-size: 1.8em;
+    color: #1e2a47;
+    margin-bottom: 15px;
 }
