@@ -44,3 +44,12 @@ document.getElementById("titulo-CursosAdicionais").addEventListener("click", fun
         cursosContainer.style.display = "none";
     }
 });
+
+document.getElementById("titulo-HistoricoAcademico").addEventListener("click", function() {
+    const historicoAcademicoContainer = document.getElementById("HistoricoAcademico-container");
+    if (historicoAcademicoContainer.style.display === "none" || historicoAcademicoContainer.style.display === "") {
+        historicoAcademicoContainer.style.display = "block";
+    } else {
+        historicoAcademicoContainer.style.display = "none";
+    }
+});
